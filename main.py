@@ -6,7 +6,7 @@ import pyttsx3
 
 load_dotenv()
 
-genai.configure(api_key=os.getenv("GENMINI_API_KEY"))
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 model = genai.GenerativeModel("gemini-2.0-flash") 
 
@@ -42,7 +42,8 @@ while True:
     if user_input is None:
         continue
     if user_input.lower() == "exit":
-        print("Exiting...")
+        print("Acha Chalta hu Duao me yaad rakhna")
+        speak_text("Acha Chalta hu Duao me yaad rakhna")
         break
 
     response = chat.send_message(user_input)
