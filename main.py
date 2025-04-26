@@ -46,6 +46,6 @@ while True:
         break
 
     response = chat.send_message(user_input)
-    print(f"JARVIS: {response.text}")
+    print(f"NOVA: {response.text}")
     speak_text(response.text)
 
